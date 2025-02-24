@@ -14,8 +14,8 @@ A new Wi-Fi network is created with the same SSID as the target.
 Users may unintentionally connect if their device does not verify the MAC address of the access point.
 Further analysis can be performed on device behavior within the cloned network.
 Example Code for Creating a Cloned Wi-Fi Network:
-################################
-------------Setting Up the ESP8266 Wi-Fi Testing Tool
+═════════════════════════════════════════════════════════════════
+##########Setting Up the ESP8266 Wi-Fi Testing Tool##############
 Download provided Firmware
 ↓↓↓
 Open the folder named "Jammer" and launch ESP8266Flasher.exe.
@@ -24,14 +24,14 @@ Load the firmware file: deather_2.1.0_1mb.bin.
 Hit "Flash" and wait for the process to complete. The board’s LED will blink when it's done.
 Power Up & Connect
 ↓↓↓
-Disconnect the ESP8266 from your computer and power it using any 3.7V or 5V source.
+Disconnect the ESP8266 from your computer and power it using any 3.7V or 5V source (even a charching microusb cable will do).
 Look for a new Wi-Fi network named "deather" and connect to it.
 Access the Web Interface
 ↓↓↓
 Open a browser and go to 192.168.4.1.
 From here, you can start testing the security of your network.
 ✔✔✔
-################################
+═════════════════════════════════════════════════════════════════
 Conclusion
 The ESP8266 is a powerful tool for Wi-Fi security testing. Using jamming and cloning techniques allows vulnerabilities to be identified and improves wireless security. However, such experiments should only be conducted on your own networks or with explicit permission from the network owner.
 ################################
