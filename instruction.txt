@@ -1,0 +1,37 @@
+WeMos D1 Mini on ESP8266) is a powerful microcontroller with Wi-Fi support, useful for various network tests, including wireless security assessments. Two common testing methods are Wi-Fi jamming and Wi-Fi cloning, which help evaluate vulnerabilities to Deauthentication attacks or network duplication.
+################################
+Wi-Fi Jamming (Deauthentication Attack)
+One of the simplest ways to temporarily disrupt Wi-Fi is through a deauthentication attack. This works by sending special management packets (deauth frames) that force clients to disconnect from the network.
+################################
+How it Works?
+Wi-Fi clients and access points exchange special frames to maintain connections. If a client receives a deauth packet, it assumes it has been disconnected and stops communicating with the network.
+################################
+Wi-Fi Cloning
+Wi-Fi cloning allows the creation of a network with the same SSID as the target network. This can be used to test security and observe client behavior in such situations.
+################################
+How it Works?
+A new Wi-Fi network is created with the same SSID as the target.
+Users may unintentionally connect if their device does not verify the MAC address of the access point.
+Further analysis can be performed on device behavior within the cloned network.
+Example Code for Creating a Cloned Wi-Fi Network:
+################################
+------------Setting Up the ESP8266 Wi-Fi Testing Tool
+Download provided Firmware
+↓↓↓
+Open the folder named "Jammer" and launch ESP8266Flasher.exe.
+Once installed and running, select the COM port (make sure your USB cable supports data transfer, not just charging).
+Load the firmware file: deather_2.1.0_1mb.bin.
+Hit "Flash" and wait for the process to complete. The board’s LED will blink when it's done.
+Power Up & Connect
+↓↓↓
+Disconnect the ESP8266 from your computer and power it using any 3.7V or 5V source.
+Look for a new Wi-Fi network named "deather" and connect to it.
+Access the Web Interface
+↓↓↓
+Open a browser and go to 192.168.4.1.
+From here, you can start testing the security of your network.
+✔✔✔
+################################
+Conclusion
+The ESP8266 is a powerful tool for Wi-Fi security testing. Using jamming and cloning techniques allows vulnerabilities to be identified and improves wireless security. However, such experiments should only be conducted on your own networks or with explicit permission from the network owner.
+################################
